@@ -1,30 +1,21 @@
 package com.example.EmployeePayrollApp.model;
 
+
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "EMPLOYEE")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Employee {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String email;
-    private double salary;
 
-    // ✅ **No-Args Constructor**
-    public Employee() {}
-
-    // ✅ **Parameterized Constructor**
-    public Employee(String name, String email, double salary) {
-        this.name = name;
-        this.email = email;
-        this.salary = salary;
-    }
-
-    // ✅ **Getters and Setters**
     public Long getId() {
         return id;
     }
@@ -33,20 +24,15 @@ public class Employee {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    private double salary;
+    private String department;
+
+    public String getDepartment() {
+        return department;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     public double getSalary() {
@@ -57,14 +43,20 @@ public class Employee {
         this.salary = salary;
     }
 
-    // ✅ **toString() Method for Debugging**
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", salary=" + salary +
-                '}';
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
+

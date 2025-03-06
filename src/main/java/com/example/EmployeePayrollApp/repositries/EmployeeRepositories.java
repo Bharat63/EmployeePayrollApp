@@ -1,4 +1,6 @@
 package com.example.EmployeePayrollApp.repositries;
 
-public class EmployeeRepositories{
-}
+import com.example.EmployeePayrollApp.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepositories extends JpaRepository<Employee, Long> {}
