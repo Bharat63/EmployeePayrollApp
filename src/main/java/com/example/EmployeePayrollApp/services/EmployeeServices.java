@@ -1,5 +1,6 @@
 package com.example.EmployeePayrollApp.services;
 
+import com.example.EmployeePayrollApp.dto.EmployeePayrollIDTO;
 import com.example.EmployeePayrollApp.model.Employee;
 import com.example.EmployeePayrollApp.repositries.EmployeeRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,16 +25,24 @@ public class EmployeeServices implements EmployeeServiceInterface{
     }
 
     @Override
-    public Employee addEmployee(Employee emp) {
-        return repository.save(emp);
+    public Employee addEmployee(EmployeePayrollIDTO emp) {
+        Employee employee = new Employee();
+        employee.setName(emp.getName());
+        employee.setEmail(emp.getEmail());
+        employee.setSalary(emp.getSalary());
+        employee.setDepartment(emp.getDepartment());
+        return repository.save(employee);
     }
 
     @Override
-    public Employee updateEmployee(Long id, Employee emp) {
+    public Employee updateEmployee(Long id, EmployeePayrollIDTO emp) {
         Employee existingEmp = repository.findById(id).orElse(null);
         if (existingEmp != null) {
             existingEmp.setName(emp.getName());
             existingEmp.setSalary(emp.getSalary());
+            existingEmp.setDepartment(emp.getDepartment());
+            existingEmp.setEmail(emp.getEmail());
+
             return repository.save(existingEmp);
         }
         return null;
