@@ -1,0 +1,220 @@
+2025-03-08 11:49:48 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 12052 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 11:49:48 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 11:49:48 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 11:49:51 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 11:49:51 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 11:49:51 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 11:49:52 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties': Could not bind properties to 'JpaProperties' : prefix=spring.jpa, ignoreInvalidFields=false, ignoreUnknownFields=true
+2025-03-08 11:49:52 [INFO] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-08 11:49:52 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jpa.show-sql' to boolean:
+
+    Property: spring.jpa.show-sql
+    Value: "true  # Shows SQL queries in logs"
+    Origin: class path resource [application.properties] - 25:21
+    Reason: failed to convert java.lang.String to boolean (caused by java.lang.IllegalArgumentException: Invalid boolean value 'true  # Shows SQL queries in logs')
+
+Action:
+
+Update your application's configuration
+
+2025-03-08 11:51:41 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 6384 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 11:51:41 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 11:51:42 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 11:51:45 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 11:51:45 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 11:51:45 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 11:51:45 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 11:51:46 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 11:51:46 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 11:51:47 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 11:51:47 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56835f2f
+2025-03-08 11:51:47 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 11:51:47 [WARN] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-08 11:51:47 [WARN] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-08 11:51:47 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 11:51:49 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 11:51:50 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 11:51:51 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 10.343 seconds (process running for 11.328)
+2025-03-08 11:55:02 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 11:55:02 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-08 11:55:07 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 10224 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 11:55:07 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 11:55:07 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 11:55:10 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 11:55:10 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 11:55:10 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 11:55:10 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 11:55:11 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 11:55:11 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 11:55:12 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 11:55:12 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5112b7
+2025-03-08 11:55:12 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 11:55:12 [WARN] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-08 11:55:12 [WARN] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-08 11:55:12 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 11:55:14 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 11:55:15 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 11:55:15 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 10.065 seconds (process running for 11.16)
+2025-03-08 11:57:27 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 11:57:27 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-08 11:57:41 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 13196 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 11:57:41 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 11:57:41 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 11:57:45 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 11:57:45 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 11:57:45 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 11:57:46 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 11:57:46 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 11:57:46 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 11:57:47 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 11:57:48 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5563bb40
+2025-03-08 11:57:48 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 11:57:48 [WARN] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-08 11:57:48 [WARN] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-08 11:57:48 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 11:57:51 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 11:57:52 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 11:57:53 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 12.901 seconds (process running for 13.95)
+2025-03-08 11:59:20 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 12:05:36 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 12:05:36 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-08 12:05:45 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 9636 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 12:05:45 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 12:05:45 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 12:05:49 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 12:05:49 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 12:05:49 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 12:05:50 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 12:05:50 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 12:05:50 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 12:05:51 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 12:05:52 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66298fe9
+2025-03-08 12:05:52 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 12:05:52 [WARN] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-08 12:05:52 [WARN] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-08 12:05:52 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 12:05:54 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 12:05:54 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 12:05:55 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 11.294 seconds (process running for 12.438)
+2025-03-08 12:06:07 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 12:06:07 [INFO] c.e.E.controller.EmployeeController - Getting all the employees
+2025-03-08 12:07:17 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 12:07:17 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-08 12:07:21 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 10208 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 12:07:21 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 12:07:21 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 12:07:25 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 12:07:25 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 12:07:25 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 12:07:25 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 12:07:25 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4342c13
+2025-03-08 12:07:25 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 12:07:26 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 12:07:26 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 12:07:26 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 12:07:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 12:07:29 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 12:07:29 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 12:07:30 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 10.045 seconds (process running for 10.986)
+2025-03-08 12:07:34 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 12:07:34 [INFO] c.e.E.controller.EmployeeController - Getting all the employees
+2025-03-08 12:11:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 12:11:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-08 12:11:10 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 8200 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 12:11:10 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 12:11:10 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 12:11:14 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 12:11:14 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 12:11:14 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 12:11:15 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 12:11:16 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@740b6628
+2025-03-08 12:11:16 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 12:11:16 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 12:11:16 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 12:11:16 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 12:11:17 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 12:11:19 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 12:11:20 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 12:11:21 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 11.632 seconds (process running for 12.613)
+2025-03-08 12:11:39 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 12:11:40 [INFO] c.e.E.controller.EmployeeController - Getting all the employees
+2025-03-08 12:14:12 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 12:14:12 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-08 12:14:22 [INFO] c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23 with PID 3144 (C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp\target\classes started by bksha in C:\Users\bksha\OneDrive\Desktop\EmployeePayrollApp)
+2025-03-08 12:14:22 [DEBUG] c.e.E.EmployeePayrollAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 12:14:22 [INFO] c.e.E.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 12:14:26 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 12:14:26 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 12:14:26 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 12:14:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 12:14:26 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eb9a3ef
+2025-03-08 12:14:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 12:14:26 [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 12:14:27 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 12:14:27 [INFO] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 12:14:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 12:14:30 [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 12:14:30 [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 12:14:32 [INFO] c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 10.608 seconds (process running for 11.673)
+2025-03-08 12:14:42 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 12:14:42 [INFO] c.e.E.controller.EmployeeController - Getting all the employees
+2025-03-08 12:14:57 [INFO] c.e.E.controller.EmployeeController - Creating a new Emmployee
+2025-03-08 12:15:08 [INFO] c.e.E.controller.EmployeeController - Update an employees
+2025-03-08 12:15:14 [INFO] c.e.E.controller.EmployeeController - Delete an employees
