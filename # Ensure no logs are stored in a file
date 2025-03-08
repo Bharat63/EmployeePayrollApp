@@ -1,0 +1,81 @@
+2025-03-08T14:42:30.808+05:30 ERROR 7200 --- [EmployeePayrollApp] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.example.employeepayrollapp' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.example.employeepayrollapp
+    Value: "DEBUG  # Only for your project logs"
+    Origin: class path resource [application-dev.properties] - 23:46
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # Only for your project logs)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-03-08T14:42:41.574+05:30 ERROR 1388 --- [EmployeePayrollApp] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.example.employeepayrollapp' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.example.employeepayrollapp
+    Value: "DEBUG  # Only for your project logs"
+    Origin: class path resource [application-dev.properties] - 23:46
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # Only for your project logs)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-03-08T14:43:51.167+05:30 ERROR 8128 --- [EmployeePayrollApp] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.example.employeepayrollapp' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.example.employeepayrollapp
+    Value: "DEBUG  # Only for your project logs"
+    Origin: class path resource [application-dev.properties] - 23:46
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # Only for your project logs)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+

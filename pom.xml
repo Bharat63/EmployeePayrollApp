@@ -22,26 +22,31 @@
 	</properties>
 
 	<dependencies>
-		<!-- Spring Boot Dependencies -->
+		<!-- ✅ Spring Boot Core Dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>  <!-- Added for Profile Support -->
+		</dependency>
+
+		<!-- ✅ Spring Boot Web (REST APIs) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- ✅ Spring Boot JPA (Database ORM) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
-		<!-- Lombok (for auto-generating getters, setters, etc.) -->
+		<!-- ✅ Lombok (Auto-generates Getters, Setters, etc.) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.30</version>
 			<scope>provided</scope>
 		</dependency>
-
-		<!-- Lombok Annotation Processing -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok-mapstruct-binding</artifactId>
@@ -49,26 +54,25 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- Database Connectivity -->
+		<!-- ✅ Database Dependencies -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Logging: SLF4J and Logback -->
+		<!-- ✅ Logging Dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>
 
-		<!-- Testing Dependencies -->
+		<!-- ✅ Testing Dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
