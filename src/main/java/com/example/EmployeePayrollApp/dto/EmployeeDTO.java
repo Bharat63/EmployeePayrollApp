@@ -1,31 +1,13 @@
 package com.example.EmployeePayrollApp.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data  // Generates getters, setters, toString, equals, and hashCode
+@NoArgsConstructor  // Generates a no-args constructor
+@AllArgsConstructor  // Generates an all-args constructor
 public class EmployeeDTO {
     private String name;
     private double salary;
-
-    // Constructors
-    public EmployeeDTO() {}
-
-    public EmployeeDTO(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    // Getters & Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
 }
